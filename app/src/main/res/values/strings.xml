@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">iCardeFragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="signUp">Create Account</string>
+    <string name="signIn">Login</string>
+</resources>

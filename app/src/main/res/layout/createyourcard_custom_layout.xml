@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#58C2F6" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create your business card"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="19sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/circularbordersolid">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:startIconDrawable="@drawable/ic_business">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_"
+                android:hint="Business Name"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
+                android:singleLine="true"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:startIconDrawable="@drawable/ic_user">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_FullName"
+                android:hint="Full Name"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
+                android:singleLine="true"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:startIconDrawable="@drawable/ic_email_24dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:id="@+id/et_Email"
+                android:drawableStart="@drawable/ic_password"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
+                android:singleLine="true"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:startIconDrawable="@drawable/ic_call_24dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact no."
+                android:drawableStart="@drawable/ic_password"
+                android:textSize="15sp"
+                android:id="@+id/et_Phone"
+                android:fontFamily="@font/montserrat_regular"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
+                android:singleLine="true"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:startIconDrawable="@drawable/ic_place"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:drawableStart="@drawable/ic_password"
+                android:textSize="15sp"
+                android:id="@+id/et_Address"
+                android:fontFamily="@font/montserrat_regular"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Add card"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:id="@+id/btn_Register"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:padding="10dp"
+            android:background="#58C2F6"
+            android:textColor="#FFFFFF"
+            android:ems="10"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

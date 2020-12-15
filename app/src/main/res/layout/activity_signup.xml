@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup.SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#58C2F6" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/circularbordersolid">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:startIconDrawable="@drawable/ic_user"
+            app:hintTextAppearance="@color/colorAccent"
+            android:textColorHint="@color/goodgrey">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_FullName"
+                android:hint="Full Name"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
+                android:singleLine="true"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:startIconDrawable="@drawable/ic_email_24dp"
+            app:hintTextAppearance="@color/colorAccent"
+            android:textColorHint="@color/goodgrey">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:id="@+id/et_Email"
+                android:drawableStart="@drawable/ic_password"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
+                android:singleLine="true"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:startIconDrawable="@drawable/ic_call_24dp"
+            app:hintTextAppearance="@color/colorAccent"
+            android:textColorHint="@color/goodgrey">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact no."
+                android:drawableStart="@drawable/ic_password"
+                android:textSize="15sp"
+                android:id="@+id/et_Phone"
+                android:fontFamily="@font/montserrat_medium"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
+                android:singleLine="true"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/ic_password"
+            app:hintTextAppearance="@color/colorAccent"
+            android:textColorHint="@color/goodgrey">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:id="@+id/et_Password"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:id="@+id/btn_Register"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:padding="10dp"
+            android:background="#58C2F6"
+            android:textColor="#FFFFFF"
+            android:ems="10"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have account? Login"
+            android:textSize="12sp"
+            android:id="@+id/tv_goToLogin"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"            />
+    </LinearLayout>
+
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="invisible"
+        app:indicatorName="BallPulseIndicator"
+        app:indicatorColor="#58C2F6"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>

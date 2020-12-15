@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circularbordersolid"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_businessName"
+            android:text=""
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="#424242"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_businessName"
+            android:id="@+id/rl_NameLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_share"
+                    android:id="@+id/iv_share"
+                    android:layout_margin="10dp"
+                    />
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="2dp"
+                    android:rotation="90"
+                    android:background="@color/grey"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_location_pin"
+                    android:layout_margin="10dp"
+                    android:id="@+id/iv_location"
+                    />
+
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="2dp"
+                    android:rotation="90"
+                    android:background="@color/grey"
+                    android:layout_marginTop="5dp"
+                    />
+                <ImageView
+                    android:id="@+id/iv_website"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_globe_with_an_arrow"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"
+                android:id="@+id/horizontalLine2"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_call"
+                    android:layout_margin="10dp"
+                    android:id="@+id/iv_phone"
+                    />
+
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="2dp"
+                    android:rotation="90"
+                    android:background="@color/grey"
+                    android:layout_marginTop="5dp"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_image_gallery"
+                    android:layout_margin="10dp"
+                    android:id="@+id/iv_imageGallery"
+                    />
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="2dp"
+                    android:rotation="90"
+                    android:background="@color/grey"
+                    android:layout_marginTop="5dp"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_video_player"
+                    android:layout_margin="10dp"
+                    android:id="@+id/iv_video"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/tv_detailuserName"-->
+<!--                android:text="Hardeep Singh Sandhu"-->
+<!--                android:fontFamily="@font/montserrat_regular"-->
+<!--                android:textColor="#424242"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="14sp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/tv_detailuserDesignation"-->
+<!--                android:text="Android Developer"-->
+<!--                android:fontFamily="@font/montserrat_regular"-->
+<!--                android:textColor="#424242"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="11sp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_below="@id/tv_detailuserName"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/tv_userPhone"-->
+<!--                android:text="+917837176356"-->
+<!--                android:fontFamily="@font/montserrat_regular"-->
+<!--                android:textColor="#424242"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="11sp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_below="@id/tv_detailuserDesignation"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/tv_detailuserAddress"-->
+<!--                android:text="Jalandhar cantt."-->
+<!--                android:fontFamily="@font/montserrat_regular"-->
+<!--                android:textColor="#424242"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="11sp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_below="@id/tv_userPhone"-->
+<!--                />-->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/ic_right_arrow"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                />-->
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_NameLayout"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"
+                android:id="@+id/horizontalLine"
+                android:layout_marginTop="5dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go back"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="#424242"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                tools:ignore="SmallSp"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frontLayout">
+
+        <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circularbordersolid"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_bName"
+                        android:text=""
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="#424242"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_bName"
+                        android:id="@+id/rl_NameLayout">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_userName"
+                            android:text="Hardeep Singh Sandhu"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="#424242"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_marginTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_userDesignation"
+                            android:text="Android Developer"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="#424242"
+                            android:textStyle="bold"
+                            android:textSize="11sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@id/tv_userName"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/iv_detailsArrow"
+                            app:srcCompat="@drawable/ic_right_arrow"
+                            android:padding="10dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:focusable="true"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rl_NameLayout"
+                        android:layout_marginTop="10dp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/grey"
+                            android:id="@+id/horizontalLine"
+                            android:layout_marginTop="5dp"/>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quick access"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="#424242"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_marginTop="10dp"
+                            tools:ignore="SmallSp"
+                            android:id="@+id/tv_quickAccess"
+                            android:layout_centerHorizontal="true"/>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+</RelativeLayout>

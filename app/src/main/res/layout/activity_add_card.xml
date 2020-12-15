@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#58C2F6" />
+
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_24dp"
+            android:id="@+id/iv_backArrow"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create your business card"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+<!--            <ImageView-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:padding="6dp"-->
+<!--                android:src="@drawable/ic_notifications_white_24dp" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_margin="8dp"-->
+<!--                android:padding="4dp"-->
+<!--                android:src="@drawable/circleyellowfil" />-->
+        </RelativeLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/circularbordersolid">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:startIconDrawable="@drawable/ic_business"
+                        app:hintTextAppearance="@color/colorAccent"
+                        android:textColorHint="@color/goodgrey"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_Bname"
+                            android:hint="Business Name"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:drawablePadding="10dp"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:backgroundTint="#58C2F6"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:startIconDrawable="@drawable/ic_user"
+                        app:hintTextAppearance="@color/colorAccent"
+                        android:textColorHint="@color/goodgrey">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_personName"
+                            android:hint="Full Name"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:drawablePadding="10dp"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:backgroundTint="#58C2F6"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:startIconDrawable="@drawable/ic_email_24dp"
+                        app:hintTextAppearance="@color/colorAccent"
+                        android:textColorHint="@color/goodgrey"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:id="@+id/et_personEmail"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:drawablePadding="10dp"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:backgroundTint="#58C2F6"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:startIconDrawable="@drawable/ic_call_24dp"
+                        app:hintTextAppearance="@color/colorAccent"
+                        android:textColorHint="@color/goodgrey">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Contact no."
+                            android:textSize="15sp"
+                            android:id="@+id/et_personPhone"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:drawablePadding="10dp"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:inputType="number"
+                            android:backgroundTint="#58C2F6"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:startIconDrawable="@drawable/ic_landline"
+                        app:hintTextAppearance="@color/colorAccent"
+                        android:textColorHint="@color/goodgrey">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Office Contact no."
+                            android:textSize="15sp"
+                            android:id="@+id/et_PhoneLandline"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:drawablePadding="10dp"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:inputType="number"
+                            android:backgroundTint="#58C2F6"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:startIconDrawable="@drawable/ic_place"
+                        app:hintTextAppearance="@color/colorAccent"
+                        android:textColorHint="@color/goodgrey">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Address"
+                            android:drawableStart="@drawable/ic_password"
+                            android:textSize="15sp"
+                            android:id="@+id/et_personAddress"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:drawablePadding="10dp"
+                            android:padding="15dp"
+                            android:backgroundTint="#58C2F6"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:startIconDrawable="@drawable/ic_designation"
+                        app:hintTextAppearance="@color/colorAccent"
+                        android:textColorHint="@color/goodgrey">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Designation"
+                            android:textSize="15sp"
+                            android:id="@+id/et_personDesignation"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:drawablePadding="10dp"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:backgroundTint="#58C2F6"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="Add card"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center"
+                        android:id="@+id/btn_addCard"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:padding="10dp"
+                        android:background="#58C2F6"
+                        android:textColor="#FFFFFF"
+                        android:ems="10"
+                        android:layout_marginBottom="20dp"
+                        />
+
+                </LinearLayout>
+            </ScrollView>
+    </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="invisible"
+        app:indicatorName="BallPulseIndicator"
+        app:indicatorColor="#58C2F6"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>
